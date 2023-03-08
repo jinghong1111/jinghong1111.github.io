@@ -53,6 +53,7 @@ const Navbar = () => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+           {/* this here change the highlights of about,work, contact */}
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -67,6 +68,7 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
+           {/* the toggle bar if the page gets smaller */} 
           <img
             src={toggle ? close : menu}
             alt='menu'
