@@ -21,6 +21,10 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
         "animal-pattern": "url('/src/assets/animalbg.png')",
+        "background-pattern": "url('/src/assets/backgroundbg.png')",
+        "aesthetic-pattern": "url('/src/assets/aestheticbg.png')", 
+        "wave-pattern": "url('/src/assets/wavebg.png')",
+        "abstract-pattern": "url('/src/assets/abstractbg.png')",
       },
     },
   },
