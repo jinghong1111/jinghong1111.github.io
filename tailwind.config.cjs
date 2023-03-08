@@ -24,6 +24,7 @@ module.exports = {
         "background-pattern": "url('/src/assets/backgroundbg.png')",
         "aesthetic-pattern": "url('/src/assets/aestheticbg.png')", 
         "wave-pattern": "url('/src/assets/wavebg.png')",
+        "wave-pattern2": "url('/src/assets/wave2bg.png')",
         "abstract-pattern": "url('/src/assets/abstractbg.png')",
       },
     },
