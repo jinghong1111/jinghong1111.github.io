@@ -45,7 +45,7 @@ const Navbar = () => {
           }}
         >
             {/*CHANGE THIS LATER TO MY OWN IMAGE  */}
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain' height= "400px" width = "400px"  />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             JingHong Huang &nbsp;
             <span className='sm:block hidden'> | Software Engineer/ Web Developer Mastery</span>
