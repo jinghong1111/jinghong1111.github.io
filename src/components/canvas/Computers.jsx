@@ -21,6 +21,7 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
+        // isMobile is a boolean value that is passed in as a prop, if the screen is mobile, the scale and position of the 3d model will be different 
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
@@ -32,6 +33,7 @@ const Computers = ({ isMobile }) => {
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
+  // the useEffect is checking the screen size, if the screen is mobile, the 3d model will be rendered differently 
   useEffect(() => {
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -58,11 +60,15 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
+      // camera position for the 3d object to be rendered
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
+        {/* allows for the use of a loader (suspense), orbitcontrols allows the movement 
+        of the 3d model  */}
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
+        // allows for specific rotation, on the y axis 
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
