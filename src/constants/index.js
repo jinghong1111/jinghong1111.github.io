@@ -23,6 +23,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    python, 
+    softeng, 
+    ICIC, 
+    hqo,
+    shinola,
+    bu,
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +52,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Software Engineer",
       icon: mobile,
     },
     {
@@ -54,7 +60,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Illustrator",
       icon: creator,
     },
   ];
@@ -80,10 +86,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -112,83 +118,96 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "python",
+      icon: python,
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Marketing and Media Intern",
+      company_name: "Inner City Capical Connections",
+      icon: ICIC,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "July 2019 - Aug 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Participated in the tech. development and product management meetings.",
+        "Utilized Salesforce to update salesforce information on the website.", 
+        "Used Excel to manage all the existing data of existing/potential clients.", 
+        "Pitched sales to potential customers to convince them to buy a product or service.",
+        "Conducted market research and analyzed customer feedback to inform sales pitches.",
+        "Assisted with digital marketing campaigns using tools such as Google Analytics, Hootsuite, Mailchimp, and AdWords.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Graphic Design and Marketing Intern",
+      company_name: "HeadQuarter Optimizer (HqO)",
+      icon: hqo,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "July 2020 - Aug 2020",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Proposed potential designs for holiday-themed HqO company logos using design software.",
+        "Designed user personas through Figma and online interviews for user experience (UX) design.",
+        "Created templates for a weekly company design newsletter using graphic design skills.",
+        "Used collaboration tools such as Figma, Google Drive, or Slack to work with other designers or stakeholders.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Assistant Librarian ",
+      company_name: "Boston University: Mugar Memorial Library",
+      icon: bu,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Aug 2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Managed and maintained library databases, including cataloging systems and digital archives.",
+        "Assisted patrons with using library technology, such as computers, printers, and scanners.",
+        "Conducted research and analysis using library databases and search engines, such as EBSCO and JSTOR.",
+        "Provided training and support to staff on library databases and technology systems.", 
+        "Worked with IT department to troubleshoot and resolve technology issues related to library systems and equipment.", 
+        "Developed and implemented strategies for integrating new technology and databases into the library's collection and services.", 
+        "Collaborated with librarians and staff to ensure accurate and efficient organization of physical and digital materials.", 
+        "Monitored and evaluated the effectiveness of library technology and databases, and made recommendations for improvement.", 
+        "Stayed up-to-date with emerging technologies and trends in library databases and information management.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Retail Sales Associate ",
+      company_name: "Shinola",
+      icon: shinola,
+      iconBg: "#383E56",
+      date: "Aug 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Utilized Point of Sale (POS) systems to process transactions, manage inventory, and generate sales reports.", 
+        "Demonstrated expertise in Shinola's product offerings, including watches, leather goods, and bicycles, by utilizing internal computer systems to access detailed information.",
+        "Used customer relationship management (CRM) software to track customer purchases, preferences, and contact information to build relationships and increase sales.",
+        "Conducted product research and comparison shopping for customers using online resources, such as brand websites and customer reviews.",
+        "Assisted customers with online orders and returns, and provided support for e-commerce platform, including order management and fulfillment.",
+        "Coordinated with the corporate office to resolve customer issues related to online purchases or shipping.",
+        "Stayed informed about current trends in luxury retail, technology, and fashion through training, seminars, and online resources.",
+        "Assisted with visual merchandising efforts and updates to the company's website and social media accounts.",
+        "Provided in-store technical support and troubleshooting for customers who needed assistance with smartwatch, fitness tracker, or other wearable technology.",
       ],
     },
   ];
   
-  const testimonials = [
+  const hobbies= [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      hobby: "Visual Art",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      hobby: "Guitar", 
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      hobby: "Badminton",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -262,4 +281,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, hobbies, projects };
