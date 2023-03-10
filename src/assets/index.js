@@ -30,6 +30,15 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import bu from "./company/bu.png"; 
+import icic from "./company/icic.png"; 
+import hqo from "./company/hqo.png"; 
+import shinola from "./company/shinola.png"; 
+import go from "./tech/go.png"; 
+import c from "./tech/c.png"; 
+import python from "./tech/python.png"; 
+import softeng from "./tech/softeng.png"; 
+
 export {
   logo,
   backend,
@@ -59,4 +68,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  bu, 
+  go, 
+  c,
+  python,
+  softeng,
+  icic,
+  hqo,
+  shinola,
 };

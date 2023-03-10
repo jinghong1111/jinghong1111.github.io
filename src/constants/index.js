@@ -25,10 +25,12 @@ import {
     threejs,
     python, 
     softeng, 
-    ICIC, 
+    icic, 
     hqo,
     shinola,
     bu,
+    go,
+    c,
   } from "../assets";
   
   export const navLinks = [
@@ -48,30 +50,46 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Fullstack Developer",
       icon: web,
+      description: "As a capable fullstack MERN developer, " +  
+      "I possess proficiency in MongoDB, Express, React, and Node.js, " + 
+      "and have the ability to build full-stack web applications with clean, "+
+      "scalable, and maintainable code. I excel at working in a team, understanding " +
+      "software architecture and design patterns, and deploying applications " +
+      "using tools such as Git, and Docker.", 
     },
     {
       title: "Software Engineer",
       icon: mobile,
+      description: "As a software engineer, I possess the skills to design, develop, and maintain " +
+      "software applications using various programming languages and technologies. I have experience in software architecture, "+
+      "design patterns, and testing methodologies, and can write clean, efficient, and maintainable code. "+
+      "I have a strong problem-solving aptitude, and can work collaboratively with other engineers, "+
+      "designers, and stakeholders to deliver high-quality products. "+
+      "I keep myself updated with the latest trends and advancements in the field, "+
+      "and strive for continuous improvement in my skills and knowledge.",
     },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Illustrator",
+      title: "Graph Designer",
       icon: creator,
+      description: "As a graphic designer proficient in Adobe and Figma, "+
+      "I have the skills to create visually compelling designs for various mediums such as print, "+
+      "web, and mobile. I have expertise in design principles, typography, and color theory, "+
+      "and can use various design software tools such as Photoshop, Illustrator, "+
+      "and Figma to produce high-quality designs. I have a strong attention to detail and can work collaboratively "+
+      "with clients and team members to deliver designs that meet their requirements and exceed their expectations. "+
+      "I am passionate about staying up-to-date with the latest design trends and continuously improving my skills." ,
     },
   ];
   
   const technologies = [
     {
-      name: "HTML 5",
+      name: "HTML",
       icon: html,
     },
     {
-      name: "CSS 3",
+      name: "CSS",
       icon: css,
     },
     {
@@ -121,6 +139,14 @@ import {
     {
       name: "python",
       icon: python,
+    },
+    {
+      name: "Go",
+      icon: go,
+    },
+    {
+      name: "C",
+      icon: c,
     }
   ];
   
@@ -128,7 +154,7 @@ import {
     {
       title: "Marketing and Media Intern",
       company_name: "Inner City Capical Connections",
-      icon: ICIC,
+      icon: icic,
       iconBg: "#383E56",
       date: "July 2019 - Aug 2019",
       points: [
@@ -217,7 +243,7 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "3D Personal Website",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
@@ -238,7 +264,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Sorting Algorithm Visualizer",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -259,7 +285,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "I'm Not Latte",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [

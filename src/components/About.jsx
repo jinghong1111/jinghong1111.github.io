@@ -4,35 +4,69 @@ import { MotionConfigContext, motion } from 'framer-motion';
 import { styles } from '../styles'; 
 import { services } from '../constants'; 
 import { fadeIn, textVariant} from '../utils/motion'; 
+import { useState} from 'react'; 
 // here is the HOC in action: 
 import {SectionWrapper} from '../hoc'; 
 
 
-const ServiceCard = ({icon, title, index}) => { 
-  return (
-   <Tilt classname = "xs:w-[250px] w-full">
-    <motion.div 
-      variants = {fadeIn("right", "spring", 0.5*index, 0.75)}
-      className = "w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-       >
-        {/* creating the cards */}
-        <div 
-          options = {{
-            max: 45,
-            scale: 1, 
-            speed: 450
+const ServiceCard = ({icon, title, description, index}) => { 
+  const [isFlipped, setIsFlipped] = useState(false);
 
-          }}
-          className = "bg-tetriary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+  const handleCardClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  const frontVariant = {
+    visible: { opacity: 1, rotateY: 0, rotateX : 0},
+    hidden: { opacity: 0, rotateY: 180, rotateX : 180},
+  };
+
+  const backVariant = {
+    visible: { opacity: 1, rotateY: 0, rotateX : 0 },
+    hidden: { opacity: 0, rotateY: 0, rotateX : 0  },
+  };
+
+  return (
+    <Tilt classname="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        onClick={handleCardClick}
+      >
+        {isFlipped ? (
+          <motion.div
+            variants={backVariant}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="bg-tetriary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           >
-            <img src= {icon} alt = {title}
-            className = "w-16 h-16 object-contain" /> 
-            <h3 className = "text-white text-[20px] font-bond text-center"> {title} </h3> 
-            </div >
-       </motion.div>
-   </Tilt>
-  )
-}
+            <p className="text-white text-[20px] font-bond text-center">
+              {description}
+            </p>
+          </motion.div>
+        ) : (
+          <motion.div
+            variants={frontVariant}
+            initial="visible"
+            animate="visible"
+            exit="hidden"
+            className="bg-tetriary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          >
+            <img
+              src={icon}
+              alt={title}
+              className="w-16 h-16 object-contain"
+            />
+            <h3 className="text-white text-[20px] font-bond text-center">
+              {title}
+            </h3>
+          </motion.div>
+        )}
+      </motion.div>
+    </Tilt>
+  );
+};
 
 
 const About = () => {
@@ -58,13 +92,18 @@ const About = () => {
 
     </motion.p>
     {/* creating the cards */}
-
-    <div className = "mt-20 flex flex-wrap gap-10"> 
-    {services.map((service,index) => (
-      <ServiceCard key = {service.title} index = {index}
-      {...service}/> 
-    ))}
-    </div>
+    {/* make the card the same size */} 
+ 
+    <div className="mt-20 flex flex-wrap gap-10">
+  {services.map((service, index) => (
+    <ServiceCard
+      key={service.title}
+      index={index}
+      description={service.description}
+      {...service}
+    />
+  ))}
+</div>
   </>
   )
 }
