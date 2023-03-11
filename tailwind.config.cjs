@@ -28,6 +28,7 @@ module.exports = {
         "abstract-pattern": "url('/src/assets/abstractbg.png')",
       },
     },
+    
   },
   plugins: [],
 };

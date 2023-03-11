@@ -17,7 +17,7 @@ const SectionWrapper = (Component, idName) =>
             viewport= {{once:true, amount: 0.25}}
             className = {`${styles.padding} max-w-7xl mx-auto relative z-0`}
             >   
-            {/*  this is the scroll gift, making it clickable */}
+            {/*  this is the scroll gif, making it clickable */}
                 <span classname = "hash-span" id = {idName}> </span> 
             <Component />
             </motion.section>

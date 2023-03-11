@@ -29,6 +29,10 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import sort_algo from "./sort_algo.png"; 
+import personal_website from "./personal_website.png";
+import resume_icon from "./resume_icon.png";
+import imnotlatte from "./imnotlatte.png"; 
 
 import bu from "./company/bu.png"; 
 import icic from "./company/icic.png"; 
@@ -38,6 +42,8 @@ import go from "./tech/go.png";
 import c from "./tech/c.png"; 
 import python from "./tech/python.png"; 
 import softeng from "./tech/softeng.png"; 
+
+
 
 export {
   logo,
@@ -76,4 +82,8 @@ export {
   icic,
   hqo,
   shinola,
+  sort_algo,
+  personal_website,
+  resume_icon,
+  imnotlatte, 
 };

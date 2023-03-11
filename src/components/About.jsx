@@ -76,7 +76,7 @@ const About = () => {
       <p className = {styles.sectionSubText}
       >Introduction </p>
       <h2 className = {styles.sectionHeadText}
-      >Overview</h2> 
+      >Who I am</h2> 
     </motion.div>
     <motion.p 
     // 1. direction, 2. type, 3. delay, 4. duration 
@@ -85,7 +85,7 @@ const About = () => {
     >
       I'm an aspiring software engineer with adaquate knowledge of the MERN stack. 
       I am experienced with Python, Java, C, C++, Javascript, Go, SQL and NoSQL databases
-      and comfortable with framworks such as React, Node.js, Three.js, Flask. 
+      and comfortable with frameworks such as React, Node.js, Three.js, Flask. 
       I enjoy learning new technologies and frameworks and am always looking for new opportunities to learn
       and create new projects that are applicable to real world problems. 
       Send me a message and let's work together (´｡• ᵕ •｡`) ! 
@@ -94,16 +94,12 @@ const About = () => {
     {/* creating the cards */}
     {/* make the card the same size */} 
  
-    <div className="mt-20 flex flex-wrap gap-10">
-  {services.map((service, index) => (
-    <ServiceCard
-      key={service.title}
-      index={index}
-      description={service.description}
-      {...service}
-    />
-  ))}
-</div>
+    <div className = "mt-20 flex flex-wrap gap-10"> 
+    {services.map((service,index) => (
+      <ServiceCard key = {service.description} index = {index}
+      {...service}/> 
+    ))}
+    </div>
   </>
   )
 }

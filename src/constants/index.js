@@ -31,6 +31,10 @@ import {
     bu,
     go,
     c,
+    sort_algo,
+    personal_website, 
+    resume_icon,
+    imnotlatte, 
   } from "../assets";
   
   export const navLinks = [
@@ -39,9 +43,22 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "experience",
+      title: "Experience",
     },
+    {
+      id: "tech",
+      title: "Tech", 
+
+    },
+    {
+      id: "projects",
+      title: "Projects",
+    },
+    {
+      id: "resume", 
+      title: "Resume", 
+    }, 
     {
       id: "contact",
       title: "Contact",
@@ -119,10 +136,6 @@ import {
     {
       name: "MongoDB",
       icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
     },
     {
       name: "git",
@@ -245,7 +258,61 @@ import {
     {
       name: "3D Personal Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "As a software engineer, I am always looking for new and exciting ways to showcase my skills and experience. That's why I created my personal website using React-Vite and Three.js. This 3D project features an interactive canvas with a playful Shiba Inu that visitors can play around with whenever they need a break from scrolling. To achieve this, I used React hooks, motion, display, and CSS styling with Tailwind to create a smooth and engaging user experience. I also utilized the power of React-Three/@fiber to add in 3D models and animation, allowing me to showcase my proficiency in various 3D frameworks. Through this project, I was able to demonstrate my ability to think outside the box and incorporate innovative features into my work. It allowed me to further hone my skills in React and explore new areas like 3D modeling and animation. Overall, I'm excited to continue exploring new technologies and frameworks in my future projects.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Three.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "vite",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "react-three-fiber",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "react-spring",
+          color: "orange-text-gradient",
+        },
+      ],
+      image: personal_website,
+      source_code_link: "https://github.com/jinghong1111/personal_website",
+    },
+    {
+      name: "Sorting Algo. Visualizer",
+      description:
+        "Sorting Algorithm Visualizer is a Python-based project I developed that enables users to visualize various sorting algorithms, including bubble sort, bucket sort, counting sort, heap sort, insertion sort, merge sort, quick sort, radix sort, and selection sort. The project uses the matplotlib framework to generate visual representations of the sorting algorithms in action, and includes color imports to enhance the user experience. This project allowed me to deepen my understanding of these sorting algorithms and develop my proficiency in Python programming. It also honed my problem-solving skills as I worked to identify and resolve issues with the visualizations. Overall, Sorting Algorithm Visualizer was an engaging and rewarding project that helped me to grow as a developer.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "matplotlib",
+          color: "green-text-gradient",
+        },
+      ],
+      image: sort_algo,
+      source_code_link: "https://github.com/jinghong1111/Sorting_algo_visualization",
+    },
+    {
+      name: "I'm Not Latte",
+      description:
+        "I developed a full-stack web application with my teammatemates called 'I'm Not Latte' using Python, JS, CSS, HTML, and React. The project aimed to help users find the nearest and highest-rated coffee shops near their current location. My responsibilities included integrating a MongoDB database to store coffee shop data and user preferences, designing and developing the application's user interface, optimizing performance for fast load times and a smooth user experience, and collaborating with a team of developers to meet project deadlines. I was particularly focused on providing users with an extensive UI that would be easy to use and ensure a satisfying user experience.",
       tags: [
         {
           name: "react",
@@ -256,54 +323,25 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "flask",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Sorting Algorithm Visualizer",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
+          {
+            name: "python",
+            color: "purple-text-gradient",
+          },
         {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "I'm Not Latte",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "javascript",
+          color: "yellow-text-gradient",
         },
         {
           name: "css",
-          color: "pink-text-gradient",
+          color: "orange-text-gradient",
         },
+
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: imnotlatte,
+      source_code_link: "https://github.com/Yu-Yang-Wang/cs411-team-project/tree/main/411-latte",
     },
   ];
   
