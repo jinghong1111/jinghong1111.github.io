@@ -7,6 +7,8 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useState, useEffect} from "react";
+ 
 
 const ProjectCard = ({
   index,
@@ -15,10 +17,11 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  isMobile,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
+      <Tilt isMobile = {isMobile}
         options={{
           max: 45,
           scale: 1,
@@ -69,6 +72,30 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+    // the useEffect is checking the screen size, if the screen is mobile, the 3d model will be rendered differently 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      // Add a listener for changes to the screen size
+      const mediaQuery = window.matchMedia("(max-width: 500px)");
+  
+      // Set the initial value of the `isMobile` state variable
+      setIsMobile(mediaQuery.matches);
+  
+      // Define a callback function to handle changes to the media query
+      const handleMediaQueryChange = (event) => {
+        setIsMobile(event.matches);
+      };
+  
+      // Add the callback function as a listener for changes to the media query
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+  
+      // Remove the listener when the component is unmounted
+      return () => {
+        mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      };
+    }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -92,7 +119,8 @@ const Projects = () => {
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard isMobile = {isMobile}
+          key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>
