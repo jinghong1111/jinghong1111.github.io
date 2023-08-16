@@ -70,9 +70,9 @@ import {
       title: "Fullstack Developer",
       icon: web,
       description: "As a capable fullstack MERN developer, " +  
-      "I possess proficiency in MongoDB, Express, React, and Node.js, " + 
-      "and have the ability to build full-stack web applications with clean, "+
-      "scalable, and maintainable code. I excel at working in a team, understanding " +
+      "I am proficient in MongoDB, Express, React, and Node.js. " + 
+      "I am experienced with building full-stack web applications with clean, "+
+      "scalable, and maintainable code. I excel in a team environment. " +
       "software architecture and design patterns, and deploying applications " +
       "using tools such as Git, and Docker.", 
     },
@@ -80,23 +80,18 @@ import {
       title: "Software Engineer",
       icon: mobile,
       description: "As a software engineer, I possess the skills to design, develop, and maintain " +
-      "software applications using various programming languages and technologies. I have experience in software architecture, "+
-      "design patterns, and testing methodologies, and can write clean, efficient, and maintainable code. "+
-      "I have a strong problem-solving aptitude, and can work collaboratively with other engineers, "+
-      "designers, and stakeholders to deliver high-quality products. "+
+      "software applications. I have experiences in software architecture, "+
+      "design patterns, and testing methodologies. "+
       "I keep myself updated with the latest trends and advancements in the field, "+
       "and strive for continuous improvement in my skills and knowledge.",
     },
     {
       title: "Graph Designer",
       icon: creator,
-      description: "As a graphic designer proficient in Adobe and Figma, "+
-      "I have the skills to create visually compelling designs for various mediums such as print, "+
-      "web, and mobile. I have expertise in design principles, typography, and color theory, "+
-      "and can use various design software tools such as Photoshop, Illustrator, "+
-      "and Figma to produce high-quality designs. I have a strong attention to detail and can work collaboratively "+
-      "with clients and team members to deliver designs that meet their requirements and exceed their expectations. "+
-      "I am passionate about staying up-to-date with the latest design trends and continuously improving my skills." ,
+      description: "As a graphic designer, I have the skills to create visually compelling designs, "+
+      "using Adobe PS, InDesign, Illustrator and Figma. I have expertise in design principles, typography, and color theory, "+
+      "I have a strong attention to detail and can work collaboratively with clients and team members to deliver"+
+      "designs that meet clients' expectation. "+
     },
   ];
   
@@ -165,31 +160,29 @@ import {
   
   const experiences = [
     {
-      title: "Marketing and Media Intern",
+      title: "Front-end Web Dev. Intern",
       company_name: "Inner City Capical Connections",
       icon: icic,
       iconBg: "#383E56",
       date: "July 2019 - Aug 2019",
       points: [
-        "Participated in the tech. development and product management meetings.",
-        "Utilized Salesforce to update salesforce information on the website.", 
-        "Used Excel to manage all the existing data of existing/potential clients.", 
-        "Pitched sales to potential customers to convince them to buy a product or service.",
-        "Conducted market research and analyzed customer feedback to inform sales pitches.",
-        "Assisted with digital marketing campaigns using tools such as Google Analytics, Hootsuite, Mailchimp, and AdWords.",
+        "Employed UI/UX design concepts into the codebase using HTML, CSS, and JSX.",
+        "Facilitated and maintained reusable front-end components, features, and functionality, resulting in a 20% reduction in development time.", 
+        "Established optimal user experience across various devices by implementing Figma templates, leading to a 15% increase in user engagement.", 
+        "Collaborated with UI/UX designers, patrons, and back-end developers to integrate components seamlessly.",
+        "Conducted testing and debugging to identify and resolve issues or bugs on the main company site.",
       ],
     },
     {
-      title: "Graphic Design and Marketing Intern",
+      title: "Web Design Intern	",
       company_name: "HeadQuarter Optimizer (HqO)",
       icon: hqo,
       iconBg: "#E6DEDD",
       date: "July 2020 - Aug 2020",
       points: [
-        "Proposed potential designs for holiday-themed HqO company logos using design software.",
-        "Designed user personas through Figma and online interviews for user experience (UX) design.",
-        "Created templates for a weekly company design newsletter using graphic design skills.",
-        "Used collaboration tools such as Figma, Google Drive, or Slack to work with other designers or stakeholders.",
+        "Designed and developed cutting-edge front-end components, features, and functionalities for web-based software services, resulting in a 25% improvement in user satisfaction.",
+        "Ensured seamless integration of front-end components with back-end systems, APIs, and databases to deliver robust and performant software solutions.",
+        "Leveraged the latest front-end UI trends, and industry best practices to drive innovation and maintain a competitive edge.",
       ],
     },
     {
@@ -343,6 +336,57 @@ import {
       image: imnotlatte,
       source_code_link: "https://github.com/Yu-Yang-Wang/cs411-team-project/tree/main/411-latte",
     },
+    {
+      name: "Covid-19 Tracker",
+      description: "Description", 
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+      ],
+      image: covid_tracker,
+      source_code_link: " ", 
+    }
+    ,
+    {
+      name: "Covid-19 Tracker",
+      description: "Description", 
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+      ],
+      image: covid_tracker,
+      source_code_link: " ", 
+    }
+    ,
+    {
+      name: "Covid-19 Tracker",
+      description: "Description", 
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+      ],
+      image: covid_tracker,
+      source_code_link: " ", 
+    }
+
   ];
   
   export { services, technologies, experiences, hobbies, projects };
