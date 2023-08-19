@@ -79,19 +79,20 @@ const About = () => {
       <p className = {styles.sectionSubText}
       >Introduction </p>
       <h2 className = {styles.sectionHeadText}
-      >Who I am</h2> 
+      >Who am I</h2> 
     </motion.div>
     <motion.p 
     // 1. direction, 2. type, 3. delay, 4. duration 
     variants = {fadeIn("","", 0.1,1)}
     className= "mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
     >
-      I'm an aspiring software engineer with adaquate knowledge of the MERN stack. 
+      My name is JingHong Huang and I am an aspiring software engineer who is proficient with the MERN stack and AI Model training. 
       I am experienced with Python, Java, C, C++, Javascript, Go, SQL and NoSQL databases
-      and comfortable with frameworks such as React, Node.js, Three.js, Flask. 
-      I enjoy learning new technologies and frameworks and am always looking for new opportunities to learn
-      and create new projects that are applicable to real world problems. 
+      and comfortable with technologies such as React, Node.js, Three.js, Flask. 
+      I enjoy learning new technologies and I am always looking for new opportunities to learn
+      by creating new projects that are applicable to real world problems. 
       Send me a message and let's work together (´｡• ᵕ •｡`) ! 
+      email: jinghong@bu.edu
 
     </motion.p>
     {/* creating the cards */}

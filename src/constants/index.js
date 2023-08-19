@@ -35,6 +35,10 @@ import {
     personal_website, 
     resume_icon,
     imnotlatte, 
+    ts_wav_pic,
+    cover_letter, 
+    shakespeare_pic, 
+    image_recognition_pic, 
   } from "../assets";
   
   export const navLinks = [
@@ -196,11 +200,6 @@ import {
         "Assisted patrons with using library technology, such as computers, printers, and scanners.",
         "Conducted research and analysis using library databases and search engines, such as EBSCO and JSTOR.",
         "Provided training and support to staff on library databases and technology systems.", 
-        "Worked with IT department to troubleshoot and resolve technology issues related to library systems and equipment.", 
-        "Developed and implemented strategies for integrating new technology and databases into the library's collection and services.", 
-        "Collaborated with librarians and staff to ensure accurate and efficient organization of physical and digital materials.", 
-        "Monitored and evaluated the effectiveness of library technology and databases, and made recommendations for improvement.", 
-        "Stayed up-to-date with emerging technologies and trends in library databases and information management.",
       ],
     },
     {
@@ -215,10 +214,6 @@ import {
         "Used customer relationship management (CRM) software to track customer purchases, preferences, and contact information to build relationships and increase sales.",
         "Conducted product research and comparison shopping for customers using online resources, such as brand websites and customer reviews.",
         "Assisted customers with online orders and returns, and provided support for e-commerce platform, including order management and fulfillment.",
-        "Coordinated with the corporate office to resolve customer issues related to online purchases or shipping.",
-        "Stayed informed about current trends in luxury retail, technology, and fashion through training, seminars, and online resources.",
-        "Assisted with visual merchandising efforts and updates to the company's website and social media accounts.",
-        "Provided in-store technical support and troubleshooting for customers who needed assistance with smartwatch, fitness tracker, or other wearable technology.",
       ],
     },
   ];
@@ -292,7 +287,7 @@ import {
       tags: [
         {
           name: "python",
-          color: "blue-text-gradient",
+          color: "purple-text-gradient",
         },
         {
           name: "matplotlib",
@@ -336,55 +331,89 @@ import {
       image: imnotlatte,
       source_code_link: "https://github.com/Yu-Yang-Wang/cs411-team-project/tree/main/411-latte",
     },
-    {
-      name: "Covid-19 Tracker",
-      description: "Description", 
-      tags: [
+    { 
+      name: "Shakespeare NLP Sentimental Analysis ", 
+      description: "Using NLP strategies to analyze the sentiments of Shakespearean play: Julius Caesar to gain insights on the correlation between perceived character sentiment and trained recognition of character sentiment.", 
+      tags: [ 
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "python",
+          color: "purple-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "NLP",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "tensorflow",
           color: "green-text-gradient",
-        },
-      ],
-      image: covid_tracker,
-      source_code_link: " ", 
+        }
+        ,
+        {
+          name: "leXmo",
+          color: "pink-text-gradient",
+        }
+      ], 
+      image: shakespeare_pic,
+      source_code_link: "https://github.com/jinghong1111/Shakespeare-NLP-analysis", 
     }
     ,
     {
-      name: "Covid-19 Tracker",
-      description: "Description", 
+      name: "Taylor Swift Music Generator",
+      description: "Using music VAE model with Tensorflow library, I preprocessed selected piano parts of Taylor Swift's music collections and partition them into different categories of music. Afterwards, I trained the data with 200 wav. files and minimized the KL divergence loss function. The model was able to generate new music based on the training data. ", 
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "python",
+          color: "purple-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "tensorflow",
           color: "green-text-gradient",
         },
       ],
-      image: covid_tracker,
-      source_code_link: " ", 
+      image: ts_wav_pic,
+      source_code_link: "https://github.com/jinghong1111/swifty-music", 
     }
     ,
     {
-      name: "Covid-19 Tracker",
-      description: "Description", 
+      name: "Cover Letter Generator ",
+      description: "[WORK IN PROGRESS]", 
       tags: [
         {
-          name: "react",
+          name: "temp",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "temp",
           color: "green-text-gradient",
         },
       ],
-      image: covid_tracker,
-      source_code_link: " ", 
+      image: cover_letter,
+      source_code_link: "https://github.com/jinghong1111/cover_letter_generator", 
+    }
+    ,
+    {
+      name: "Imagine Recognition Mobile App ",
+      description: "Deep learning project that analyzes images and return the estimated price point of the main item in the picture. [WORK IN PROGRESS]", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        },
+        {
+          name: "stable diffusion",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "swifty", 
+          color: "yellow-text-gradient", 
+        },
+      ],
+      image: imagine_recognition_pic,
+      source_code_link: "https://github.com/jinghong1111/image_recognition", 
     }
 
   ];
