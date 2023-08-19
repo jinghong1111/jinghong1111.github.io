@@ -95,8 +95,9 @@ import {
       description: "As a graphic designer, I have the skills to create visually compelling designs, "+
       "using Adobe PS, InDesign, Illustrator and Figma. I have expertise in design principles, typography, and color theory, "+
       "I have a strong attention to detail and can work collaboratively with clients and team members to deliver"+
-      "designs that meet clients' expectation. "+
+      "designs that meet clients' expectation. ", 
     },
+
   ];
   
   const technologies = [
