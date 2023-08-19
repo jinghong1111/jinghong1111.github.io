@@ -24,7 +24,6 @@ const ServiceCard = ({icon, title, description, index}) => {
   const backVariant = {
     visible: { opacity: 1, rotateY: 0, rotateX : 0 },
     hidden: { opacity: 0, rotateY: 0, rotateX : 0  },
-    // size of the card is 250px, so the text should fit inside the card 
   };
 
   return (
@@ -40,11 +39,9 @@ const ServiceCard = ({icon, title, description, index}) => {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            // adjusted the size of the width of the card to fit the text 
-            className="bg-tetriary rounded-[20px] py-5 px-12 max-w-[500px] min-h-[280px] flex justify-evenly items-center flex-col"
+            className="bg-tetriary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
           >
-
-            <p className="text-white text-[18px] font-bond text-fit ">
+            <p className="text-white text-[20px] font-bond text-center">
               {description}
             </p>
           </motion.div>
