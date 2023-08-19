@@ -16,7 +16,7 @@ export {
   Experience,
   Projects,
   Feedbacks,
-  // Contact,
+  Contact,
   EarthCanvas, 
   BallCanvas, 
   ShibaCanvas, 
