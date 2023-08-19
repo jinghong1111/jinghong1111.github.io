@@ -42,10 +42,7 @@ import go from "./tech/go.png";
 import c from "./tech/c.png"; 
 import python from "./tech/python.png"; 
 import softeng from "./tech/softeng.png"; 
-import ts_wav_pic from "./ts_wav_pic.png"; 
-import cover_letter from "./cover_letter.png"; 
-import shakespeare_pic from "./shakespeare_pic.png"; 
-import image_recognition_pic from "./image_recognition_pic.png"; 
+
 
 
 export {
@@ -89,8 +86,4 @@ export {
   personal_website,
   resume_icon,
   imnotlatte, 
-  ts_wav_pic,
-  cover_letter,
-  shakespeare_pic,
-  image_recognition_pic, 
 };
