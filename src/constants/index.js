@@ -60,10 +60,10 @@ import {
       id: "resume", 
       title: "Resume", 
     }, 
-    // {
-    //   id: "contact",
-    //   title: "Contact",
-    // },
+    {
+      id: "contact",
+      title: "Contact",
+    },
   ];
   
   const services = [
