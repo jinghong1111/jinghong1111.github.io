@@ -117,12 +117,12 @@ const Projects = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard isMobile = {isMobile}
-          key={`project-${index}`} index={index} {...project} />
+      <div className='mt-20 flex flex-wrap gap-7' style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+          {projects.map((project, index) => (
+          <ProjectCard isMobile={isMobile} key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
+
     </>
   );
 };

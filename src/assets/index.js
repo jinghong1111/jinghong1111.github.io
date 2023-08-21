@@ -43,7 +43,7 @@ import c from "./tech/c.png";
 import python from "./tech/python.png"; 
 import softeng from "./tech/softeng.png"; 
 
-import cover_letter from "./cover_letter.png"; 
+import cover_letter_pic from "./cover_letter.png"; 
 import image_recognition_pic from "./image_recognition_pic.png"; 
 import shakespeare_pic from "./shakespeare_pic.png"; 
 import ts_wav_pic from "./ts_wav_pic.png"; 
@@ -90,7 +90,7 @@ export {
   personal_website,
   resume_icon,
   imnotlatte, 
-  cover_letter,
+  cover_letter_pic,
   image_recognition_pic,
   shakespeare_pic,
   ts_wav_pic,

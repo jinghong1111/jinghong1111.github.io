@@ -36,6 +36,9 @@ import {
     resume_icon,
     imnotlatte,
     ts_wav_pic, 
+    shakespeare_pic,
+    image_recognition_pic,
+    cover_letter_pic,
   } from "../assets";
   
   export const navLinks = [
@@ -176,7 +179,8 @@ import {
         "Facilitated reusable front-end components and functionality, resulting in a 20% reduction in development time.", 
         "Established optimal user experience across various devices by implementing Figma templates, leading to a 15% increase in user engagement.", 
         "Collaborated with UI/UX designers, patrons, and back-end developers to integrate components seamlessly.", 
-        "Conducted testing and debugging to identify and resolve issues or bugs on the main company site.", 
+        "Conducted testing and debugging to identify and resolve issues or bugs on the main company site.",
+        
       ],
     },
     {
@@ -336,80 +340,80 @@ import {
       image: imnotlatte,
       source_code_link: "https://github.com/Yu-Yang-Wang/cs411-team-project/tree/main/411-latte",
     },
-    // { 
-    //   name: "Shakespeare NLP Sentimental Analysis ", 
-    //   description: "Using NLP strategies to analyze the sentiments of Shakespearean play: Julius Caesar to gain insights on the correlation between perceived character sentiment and trained recognition of character sentiment.", 
-    //   tags: [ 
-    //     {
-    //       name: "python",
-    //       color: "purple-text-gradient",
-    //     },
-    //     {
-    //       name: "NLP",
-    //       color: "yellow-text-gradient",
-    //     },
-    //     {
-    //       name: "tensorflow",
-    //       color: "green-text-gradient",
-    //     }
-    //     ,
-    //     {
-    //       name: "leXmo",
-    //       color: "pink-text-gradient",
-    //     }
-    //   ], 
-    //   image: shakespeare_pic,
-    //   source_code_link: "https://github.com/jinghong1111/Shakespeare-NLP-analysis", 
-    // }
-    // ,
-    // {
-    //   name: "Taylor Swift Music Generator",
-    //   description: "Using music VAE model with Tensorflow library, I preprocessed selected piano parts of Taylor Swift's music collections and partition them into different categories of music. Afterwards, I trained the data with 200 wav. files and minimized the KL divergence loss function. The model was able to generate new music based on the training data. ", 
-    //   tags: [
-    //     {
-    //       name: "python",
-    //       color: "purple-text-gradient",
-    //     },
-    //     {
-    //       name: "tensorflow",
-    //       color: "green-text-gradient",
-    //     }
+    { 
+      name: "Shakespeare NLP Sentimental Analysis ", 
+      description: "Using NLP strategies to analyze the sentiments of Shakespearean play: Julius Caesar to gain insights on the correlation between perceived character sentiment and trained recognition of character sentiment.", 
+      tags: [ 
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "NLP",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        }
+        ,
+        {
+          name: "leXmo",
+          color: "pink-text-gradient",
+        }
+      ], 
+      image: shakespeare_pic,
+      source_code_link: "https://github.com/jinghong1111/Shakespeare-NLP-analysis", 
+    }
+    ,
+    {
+      name: "Taylor Swift Music Generator",
+      description: "Using music VAE model with Tensorflow library, I preprocessed selected piano parts of Taylor Swift's music collections and partition them into different categories of music. Afterwards, I trained the data with 200 wav. files and minimized the KL divergence loss function. The model was able to generate new music based on the training data. ", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        }
 
-    //   ],
-    //   image: ts_wav_pic,
-    //   source_code_link: "https://github.com/jinghong1111/swifty-music", 
-    // }
-    // ,
-    // {
-    //   name: "Cover Letter Generator",
-    //   description: "[WORK IN PROGRESS]", 
-    //   tags: [
-    //     {
-    //       name: "python",
-    //       color: "purple-text-gradient",
-    //     },
-    //   ],
-    //   image: cover_letter_pic,
-    //   source_code_link: "https://github.com/jinghong1111/cover_letter_generator", 
-    // }
-    // ,
-    // {
-    //   name: "Image Recognition Mobile App ", 
-    //   description: "Deep learning project that analyzes images and return the estimated price point of the main item in the picture. [WORK IN PROGRESS]", 
-    //   tags: [
-    //     {
-    //       name: "python",
-    //       color: "purple-text-gradient",
-    //     },
-    //     {
-    //       name: "tensorflow",
-    //       color: "green-text-gradient",
-    //     }
-    //   ],
-    //   image: image_recognition_pic,
-    //   source_code_link: "https://github.com/jinghong1111/image_recognition", 
-    // }
-    // ,
+      ],
+      image: ts_wav_pic,
+      source_code_link: "https://github.com/jinghong1111/swifty-music", 
+    }
+    ,
+    {
+      name: "Cover Letter Generator",
+      description: "[WORK IN PROGRESS]", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: cover_letter_pic,
+      source_code_link: "https://github.com/jinghong1111/cover_letter_generator", 
+    }
+    ,
+    {
+      name: "Image Recognition Mobile App ", 
+      description: "Deep learning project that analyzes images and return the estimated price point of the main item in the picture. [WORK IN PROGRESS]", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        }
+      ],
+      image: image_recognition_pic,
+      source_code_link: "https://github.com/jinghong1111/image_recognition", 
+    }
+    ,
 
   ];
   
