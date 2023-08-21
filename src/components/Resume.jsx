@@ -6,7 +6,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import resume_icon from "../assets/resume_icon.png"; 
-import JHH_2023_resume from "../assets/resume_folder/JHH_2023_resume.pdf";
+// import JHH_2023_resume from "../assets/resume_folder/JHH_2023_resume.pdf";
+import JHH_resume from "../assets/resume_folder/JHH_resume.pdf"; 
 
 
 const ResumeCard = () => {
@@ -26,7 +27,7 @@ const ResumeCard = () => {
             src= {resume_icon}
             alt='resume_image'
             className='w-full h-full object-cover rounded-2xl'
-            onClick={() => window.open(JHH_2023_resume, "_blank")}
+            onClick={() => window.open(JHH_resume, "_blank")}
             />
             </div>
 

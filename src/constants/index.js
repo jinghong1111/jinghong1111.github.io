@@ -34,7 +34,8 @@ import {
     sort_algo,
     personal_website, 
     resume_icon,
-    imnotlatte, 
+    imnotlatte,
+    ts_wav_pic, 
   } from "../assets";
   
   export const navLinks = [
@@ -59,10 +60,10 @@ import {
       id: "resume", 
       title: "Resume", 
     }, 
-    {
-      id: "contact",
-      title: "Contact",
-    },
+    // {
+    //   id: "contact",
+    //   title: "Contact",
+    // },
   ];
   
   const services = [
@@ -165,22 +166,21 @@ import {
   
   const experiences = [
     {
-      title: "Marketing and Media Intern",
+      title: "Front-end Web Dev. Intern",
       company_name: "Inner City Capical Connections",
       icon: icic,
       iconBg: "#383E56",
       date: "July 2019 - Aug 2019",
       points: [
-        "Participated in the tech. development and product management meetings.",
-        "Utilized Salesforce to update salesforce information on the website.", 
-        "Used Excel to manage all the existing data of existing/potential clients.", 
-        "Pitched sales to potential customers to convince them to buy a product or service.",
-        "Conducted market research and analyzed customer feedback to inform sales pitches.",
-        "Assisted with digital marketing campaigns using tools such as Google Analytics, Hootsuite, Mailchimp, and AdWords.",
+        "Employed UI/UX design concepts into the codebase using HTML, CSS, and JSX.", 
+        "Facilitated reusable front-end components and functionality, resulting in a 20% reduction in development time.", 
+        "Established optimal user experience across various devices by implementing Figma templates, leading to a 15% increase in user engagement.", 
+        "Collaborated with UI/UX designers, patrons, and back-end developers to integrate components seamlessly.", 
+        "Conducted testing and debugging to identify and resolve issues or bugs on the main company site.", 
       ],
     },
     {
-      title: "Graphic Design and Marketing Intern",
+      title: "Web Design Intern",
       company_name: "HeadQuarter Optimizer (HqO)",
       icon: hqo,
       iconBg: "#E6DEDD",
@@ -188,8 +188,8 @@ import {
       points: [
         "Proposed potential designs for holiday-themed HqO company logos using design software.",
         "Designed user personas through Figma and online interviews for user experience (UX) design.",
-        "Created templates for a weekly company design newsletter using graphic design skills.",
-        "Used collaboration tools such as Figma, Google Drive, or Slack to work with other designers or stakeholders.",
+        "Designed and developed cutting-edge front-end components, features, and functionalities for web-based software services, resulting in a 25% improvement in user satisfaction.", 
+        "Ensured seamless integration of front-end components with back-end systems, APIs, and databases to deliver robust and performant software solutions.", 
       ],
     },
     {
@@ -205,9 +205,6 @@ import {
         "Provided training and support to staff on library databases and technology systems.", 
         "Worked with IT department to troubleshoot and resolve technology issues related to library systems and equipment.", 
         "Developed and implemented strategies for integrating new technology and databases into the library's collection and services.", 
-        "Collaborated with librarians and staff to ensure accurate and efficient organization of physical and digital materials.", 
-        "Monitored and evaluated the effectiveness of library technology and databases, and made recommendations for improvement.", 
-        "Stayed up-to-date with emerging technologies and trends in library databases and information management.",
       ],
     },
     {
@@ -219,13 +216,9 @@ import {
       points: [
         "Utilized Point of Sale (POS) systems to process transactions, manage inventory, and generate sales reports.", 
         "Demonstrated expertise in Shinola's product offerings, including watches, leather goods, and bicycles, by utilizing internal computer systems to access detailed information.",
-        "Used customer relationship management (CRM) software to track customer purchases, preferences, and contact information to build relationships and increase sales.",
-        "Conducted product research and comparison shopping for customers using online resources, such as brand websites and customer reviews.",
-        "Assisted customers with online orders and returns, and provided support for e-commerce platform, including order management and fulfillment.",
-        "Coordinated with the corporate office to resolve customer issues related to online purchases or shipping.",
+        "Used customer relationship management (CRM) software, Sales Force, to track customer purchases, preferences, and contact information to build relationships and increase sales.",
         "Stayed informed about current trends in luxury retail, technology, and fashion through training, seminars, and online resources.",
         "Assisted with visual merchandising efforts and updates to the company's website and social media accounts.",
-        "Provided in-store technical support and troubleshooting for customers who needed assistance with smartwatch, fitness tracker, or other wearable technology.",
       ],
     },
   ];
@@ -343,6 +336,81 @@ import {
       image: imnotlatte,
       source_code_link: "https://github.com/Yu-Yang-Wang/cs411-team-project/tree/main/411-latte",
     },
+    { 
+      name: "Shakespeare NLP Sentimental Analysis ", 
+      description: "Using NLP strategies to analyze the sentiments of Shakespearean play: Julius Caesar to gain insights on the correlation between perceived character sentiment and trained recognition of character sentiment.", 
+      tags: [ 
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "NLP",
+          color: "yellow-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        }
+        ,
+        {
+          name: "leXmo",
+          color: "pink-text-gradient",
+        }
+      ], 
+      image: shakespeare_pic,
+      source_code_link: "https://github.com/jinghong1111/Shakespeare-NLP-analysis", 
+    }
+    ,
+    {
+      name: "Taylor Swift Music Generator",
+      description: "Using music VAE model with Tensorflow library, I preprocessed selected piano parts of Taylor Swift's music collections and partition them into different categories of music. Afterwards, I trained the data with 200 wav. files and minimized the KL divergence loss function. The model was able to generate new music based on the training data. ", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        }
+
+      ],
+      image: ts_wav_pic,
+      source_code_link: "https://github.com/jinghong1111/swifty-music", 
+    }
+    ,
+    {
+      name: "Cover Letter Generator",
+      description: "[WORK IN PROGRESS]", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+      ],
+      image: cover_letter_pic,
+      source_code_link: "https://github.com/jinghong1111/cover_letter_generator", 
+    }
+    ,
+    {
+      name: "Image Recognition Mobile App ", 
+      description: "Deep learning project that analyzes images and return the estimated price point of the main item in the picture. [WORK IN PROGRESS]", 
+      tags: [
+        {
+          name: "python",
+          color: "purple-text-gradient",
+        },
+        {
+          name: "tensorflow",
+          color: "green-text-gradient",
+        }
+      ],
+      image: image_recognition_pic,
+      source_code_link: "https://github.com/jinghong1111/image_recognition", 
+    }
+    ,
+
   ];
   
   export { services, technologies, experiences, hobbies, projects };
