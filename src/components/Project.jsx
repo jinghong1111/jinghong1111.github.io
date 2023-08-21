@@ -108,7 +108,7 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          These projects serve as a testament to my continuous growth and development as a learner. 
+          These projects serve as a testament to my continuous growth and development as a software engineer. 
           They provide concrete examples of my abilities and experience, with brief descriptions and 
           links to the code repositories and live demos. Through these projects, 
           I demonstrate my proficiency in tackling complex challenges, adapting to new technologies, 
