@@ -78,6 +78,11 @@ const About = () => {
       <h2 className = {styles.sectionHeadText}
       >Who I am</h2> 
     </motion.div>
+    {/*  <img
+        src="path_to_your_image.jpg" // Replace with the path or URL of your image
+        alt="JingHong Huang"
+        className="mt-4" // Adjust the styling as needed
+      /> */}
     <motion.p 
     // 1. direction, 2. type, 3. delay, 4. duration 
     variants = {fadeIn("","", 0.1,1)}

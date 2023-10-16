@@ -30,7 +30,8 @@ const Navbar = () => {
     // padding the navbar 
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+        // The py function controls the HEIGHT of the navbar, smaller = shorter, from top to bottom 
+      } w-full flex items-center py-1 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
